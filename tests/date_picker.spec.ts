@@ -1,0 +1,14 @@
+import {expect, test as it} from '@playwright/test';
+import { DatePicker } from '../page_object/DatePicker';
+
+it.describe("Date Picker", () => {
+    it('Navigate to date picker page', async ({page}) => {
+        const datePicker = new DatePicker(page);
+        await datePicker.navigateToDatePickerPage();
+        await datePicker.verifyHeader();
+        await datePicker.dateFromToday();
+        console.log(page.url());
+        await expect(page).toHaveURL(/jquery-date-picker-demo/);
+    });
+});
+
