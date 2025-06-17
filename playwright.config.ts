@@ -30,7 +30,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'https://www.lambdatest.com',
     baseURL: 'https://demoqa.com',
-    headless: false,
+    headless: true,
     //global setup only
     //storageState: './.auth/user.json', // Path to the authentication state file
     // Slow down by 50ms for each action. Useful to watch the actions. */
