@@ -25,4 +25,4 @@ jobs:
               run: npx playwright install --with-deps
             # 5. Run Playwright tests
             - name: Run Playwright tests
-              run: npm run formPageHeadless
+              run: npx playwright test form_page.spec.ts
